@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(215, 215, 215);
+}
+
 h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -5,13 +9,99 @@ h1 {
   margin-bottom: 0px;
 }
 
-.globe {
-  max-width: 35px;
-  max-height: 35px;
+h2 {
+  margin: 0 0 0px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  font-size: 38px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+select {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 202);
+  text-align: center;
+  padding: 15px;
+  margin-top: 28px;
+  color: black;
+  background-color: rgb(248, 248, 85);
+  box-shadow: 0px 2px 10px rgb(0, 0, 202);
 }
 
 footer {
   font-size: 18px;
   text-align: center;
-  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.box {
+  border: 2px solid rgb(0, 0, 202);
+  box-shadow: 0px 2px 10px rgb(0, 0, 202);
+  margin: 60px auto 20px;
+  padding: 40px;
+  max-width: 650px;
+  max-height: 670px;
+  border-radius: 10px;
+  background-color: white;
+
+  display: block;
+}
+.globe {
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.clock {
+  color: rgb(0, 0, 202);
+}
+
+.usClock {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.worldClock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usGMT {
+  font-size: 15px;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+.date {
+  text-align: center;
+  font-size: 18px;
+}
+.time {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.time small {
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.city {
+  padding: 50px 10px 40px 0px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.city:last-child {
+  border: none;
 }
