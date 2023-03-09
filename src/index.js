@@ -31,8 +31,12 @@ function usaClock() {
 }
 function changeCity(event) {
   let timezone = event.target.value;
+  if (timezone === "currentLocation") {
+    timezone = moment.tz.guess();
+  }
   let name = timezone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(timezone);
+
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `<div class="city">
         <div>
