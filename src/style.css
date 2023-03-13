@@ -1,22 +1,13 @@
 body {
   background-color: rgb(215, 215, 215);
+  margin-top: 100px;
 }
 
 h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 0px;
-}
-
-h2 {
-  margin: 0 0 0px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-
-  font-size: 38px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 select {
@@ -26,7 +17,7 @@ select {
   border: 2px solid rgb(0, 0, 202);
   text-align: center;
   padding: 15px;
-  margin-top: 28px;
+  margin-top: 21px;
   color: black;
   background-color: rgb(248, 248, 85);
   box-shadow: 0px 2px 10px rgb(0, 0, 202);
@@ -35,24 +26,28 @@ select {
 footer {
   font-size: 18px;
   text-align: center;
-  opacity: 0.7;
+  margin-top: 20px;
 }
 
 .box {
   border: 2px solid rgb(0, 0, 202);
   box-shadow: 0px 2px 10px rgb(0, 0, 202);
-  margin: 60px auto 20px;
+  margin: 0 auto;
   padding: 40px;
   max-width: 650px;
-  max-height: 670px;
+  min-width: 600px;
+  max-height: 620px;
   border-radius: 10px;
   background-color: white;
-
-  display: block;
 }
-.globe {
-  max-width: 35px;
-  max-height: 35px;
+
+.worldClock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.world {
+  font-size: 35px;
 }
 
 .clock {
@@ -66,9 +61,25 @@ footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.worldClock {
+
+.city {
+  padding: 50px 10px 40px 0px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.city:last-child {
+  border: none;
+}
+
+.name {
+  margin: 0 0 0px;
+  font-size: 45px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .usGMT {
@@ -93,15 +104,42 @@ footer {
   font-size: 22px;
 }
 
-.city {
-  padding: 50px 10px 40px 0px;
-  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: space-between;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.country {
+  font-size: 15px;
 }
 
-.city:last-child {
-  border: none;
+.GMT {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.flag {
+  font-size: 35px;
+  padding-right: 10px;
+  margin-top: 0px;
+}
+
+.worldDate {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.worldTime {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 70px;
+}
+
+.worldTime small {
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.backToHomepage {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
 }
